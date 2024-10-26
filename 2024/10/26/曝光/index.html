@@ -1,0 +1,802 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://img.wudh.top/blog/site/1/logo.png">
+  <link rel="icon" href="https://img.wudh.top/blog/site/1/logo.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Easton">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1 控制曝光三大要素1.1 光圈在相机中，光圈（Aperture）是镜头内控制进入相机传感器的光线数量的可调节开口。光圈的大小通过光圈值（f值或f-stop）来表示，通常写作 $f&#x2F;number$（例如 $f&#x2F;2.8$， $f&#x2F;5.6$）  物理定义：光圈是镜头中用于控制光线通过量的一个环状开口。光圈的大小由光圈叶片的开合程度决定，形成一个可变大小的孔径，允许不同量的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="曝光">
+<meta property="og:url" content="https://blog.wudh.top/2024/10/26/%E6%9B%9D%E5%85%89/index.html">
+<meta property="og:site_name" content="Easton&#39;s Blog">
+<meta property="og:description" content="1 控制曝光三大要素1.1 光圈在相机中，光圈（Aperture）是镜头内控制进入相机传感器的光线数量的可调节开口。光圈的大小通过光圈值（f值或f-stop）来表示，通常写作 $f&#x2F;number$（例如 $f&#x2F;2.8$， $f&#x2F;5.6$）  物理定义：光圈是镜头中用于控制光线通过量的一个环状开口。光圈的大小由光圈叶片的开合程度决定，形成一个可变大小的孔径，允许不同量的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Aperture.jpg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/light-stops.jpg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/%E6%9B%9D%E5%85%89%E8%A1%A5%E5%81%BF1.jpeg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/%E6%9B%9D%E5%85%89%E8%A1%A5%E5%81%BF2.jpeg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Matrix-Metering-mode-area.jpg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Center-Metering-mode-area.jpg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Spot-metering-mode-area.jpg">
+<meta property="og:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/%E7%9B%B4%E6%96%B9%E5%9B%BE.jpeg">
+<meta property="article:published_time" content="2024-10-26T04:48:34.000Z">
+<meta property="article:modified_time" content="2024-10-26T04:50:22.524Z">
+<meta property="article:author" content="Easton">
+<meta property="article:tag" content="摄影">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Aperture.jpg">
+  
+  
+  
+  <title>曝光 - Easton&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"blog.wudh.top","root":"/","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://img.wudh.top/blog/site/1/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 50vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Easton</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://img.wudh.top/blog/site/1/background.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="曝光"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-10-26 12:48" pubdate>
+          2024年10月26日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">曝光</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="1-控制曝光三大要素"><a href="#1-控制曝光三大要素" class="headerlink" title="1 控制曝光三大要素"></a>1 控制曝光三大要素</h1><h2 id="1-1-光圈"><a href="#1-1-光圈" class="headerlink" title="1.1 光圈"></a>1.1 光圈</h2><p>在相机中，光圈（Aperture）是镜头内控制进入相机传感器的光线数量的可调节开口。光圈的大小通过光圈值（f值或f-stop）来表示，通常写作 $f&#x2F;number$（例如 $f&#x2F;2.8$， $f&#x2F;5.6$）</p>
+<ul>
+<li><strong>物理定义</strong>：光圈是镜头中用于控制光线通过量的一个环状开口。光圈的大小由光圈叶片的开合程度决定，形成一个可变大小的孔径，允许不同量的光线进入镜头。</li>
+<li><strong>光圈值 (f值) 的定义</strong>：光圈值（f&#x2F;Number）&#x3D; 镜头焦距（mm）&#x2F;光圈口径（mm）。f&#x2F;Number是无单位的，仅表示档位。</li>
+</ul>
+<h3 id="1-1-1-光圈的功能"><a href="#1-1-1-光圈的功能" class="headerlink" title="1.1.1 光圈的功能"></a>1.1.1 光圈的功能</h3><ol>
+<li><strong>控制光通量</strong>：光圈控制进入相机传感器的光量。较大的光圈（即较小的 f 值）允许更多的光线进入镜头，增加曝光；较小的光圈（即较大的 f 值）允许较少的光线进入镜头，减少曝光。</li>
+<li><strong>影响景深</strong>：<ul>
+<li><strong>浅景深</strong>：大光圈（小 f 值）会产生浅景深，前景和背景的部分会被虚化，突出主体。</li>
+<li><strong>深景深</strong>：小光圈（大 f 值）会产生深景深，前景和背景都能保持清晰，适合风景和建筑摄影。</li>
+</ul>
+</li>
+</ol>
+<p><img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Aperture.jpg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload><br>标准的光圈级数为：f&#x2F;1，f&#x2F;1.4，f&#x2F;2，f&#x2F;2.8，f&#x2F;4，f&#x2F;5.6，f&#x2F;8，f&#x2F;11，f&#x2F;16，f&#x2F;22，f&#x2F;32，f&#x2F;45，f&#x2F;64。f&#x2F;1是最大的光圈值，上面的数列中，相邻的光圈级数，之后的级数是前面级数光量的<strong>一半</strong>。例如：一个镜头光圈设定于f&#x2F;4，它让光线进入的量，是光圈设定于f&#x2F;2.8光量的一半，或只是光圈设定于f&#x2F;2光量的四分之一。</p>
+<p>成像面上照度的表达式：<br>$E’&#x3D;  \frac {\pi L}{\beta ^ {2}+4F^ {2}}  \approx  \frac {\pi L}{4F^ {2}}$<br>$L$代表一个均匀辐射物亮度<br>$\beta$代表横向放大率，定义为像的长度与实际物体长度之比（拍摄距离远，可以忽略。微距情况下不可忽略）<br>$F$代表光圈值，即$f&#x2F;number &#x3D; \frac{f}{A}$，A为孔径直径</p>
+<p>从这个式子可以看出，为保证相邻两档光圈的曝光量是2倍的关系，f&#x2F;number就必须是$\sqrt{2}$倍的关系，这就是为什么标准光圈值是 1.4, 2.0, 2.8, 4.0 这样的序列的原因。</p>
+<p>通过光圈可得一个重要信息就是，镜头需要一个多大的滤镜。光圈值（f&#x2F;Number）&#x3D; 镜头焦距（mm）&#x2F;光圈口径（mm），而这个口径一般都小于镜头的口径(镜头一般总是前粗后细)， 所以镜头的滤镜口径总是大于焦距&#x2F;光圈。举个例子来说，200&#x2F;2.8的镜头，滤镜又径至少大于200&#x2F;2.8&#x3D;71.4，所以200&#x2F;2.8的定焦头都用72 mm滤镜。那么 300&#x2F;2.8就至少需要108 mm的口径了。</p>
+<hr>
+<h2 id="1-2-ISO"><a href="#1-2-ISO" class="headerlink" title="1.2 ISO"></a>1.2 ISO</h2><h3 id="1-2-1-ISO-的历史背景"><a href="#1-2-1-ISO-的历史背景" class="headerlink" title="1.2.1 ISO 的历史背景"></a>1.2.1 ISO 的历史背景</h3><ul>
+<li><strong>胶片时代</strong>：ISO 的前身是 ASA 和 DIN，用于表示胶片的感光度。ISO 数值反映了胶片对光的敏感程度，数值越高，胶片在较少光线下拍摄的能力越强。</li>
+<li><strong>数码时代</strong>：在数码相机中，ISO 表示传感器的增益设置，即通过电子方式放大传感器接收到的信号，使图像亮度增加。</li>
+</ul>
+<h3 id="1-2-2-ISO-的定义"><a href="#1-2-2-ISO-的定义" class="headerlink" title="1.2.2 ISO 的定义"></a>1.2.2 ISO 的定义</h3><ul>
+<li><strong>ISO 感光度</strong>：ISO 指的是相机传感器对光线的敏感度。ISO 数值越高，相机传感器对光线越敏感，图像会变得更亮；相反，ISO 数值越低，传感器对光线的敏感度越低，图像会变得更暗。</li>
+<li><strong>ISO 标准</strong>：ISO 数值是基于国际标准组织 (International Organization for Standardization) 的感光度标度，通常以 100、200、400、800、1600 等为单位增加。</li>
+</ul>
+<h3 id="1-2-3-ISO-的作用"><a href="#1-2-3-ISO-的作用" class="headerlink" title="1.2.3 ISO 的作用"></a>1.2.3 ISO 的作用</h3><ol>
+<li><strong>控制曝光</strong>：<ul>
+<li><strong>低 ISO</strong>（如 100 或 200）：在光线充足的环境下使用低 ISO，可以获得最好的图像质量，噪点较少，适合户外摄影和静物摄影。</li>
+<li><strong>高 ISO</strong>（如 1600 或 3200 甚至更高）：在低光环境下或需要高速快门时使用高 ISO，尽管噪点增加，但可以确保图像足够明亮，适合夜景、室内摄影或运动摄影。</li>
+</ul>
+</li>
+<li><strong>影响图像噪点</strong>：<ul>
+<li><strong>低 ISO</strong>：噪点较少，图像细节更丰富，色彩更准确。</li>
+<li><strong>高 ISO</strong>：随着 ISO 值的增加，图像中的噪点（细小的颗粒状干扰）也会增加，图像可能显得粗糙，细节丢失。</li>
+</ul>
+</li>
+<li><strong>兼顾快门速度和光圈</strong>：<ul>
+<li><strong>提高 ISO</strong> 可以让摄影师在低光环境下使用更快的快门速度，避免图像模糊，也可以在特定景深要求下使用更小的光圈。</li>
+<li><strong>降低 ISO</strong> 则适合在光线充足的环境下进行拍摄，避免过度曝光，同时可以使用更大的光圈来获得浅景深效果。</li>
+</ul>
+</li>
+</ol>
+<h2 id="1-3-快门"><a href="#1-3-快门" class="headerlink" title="1.3 快门"></a>1.3 快门</h2><p>快门（Shutter）是相机中控制曝光时间的一个重要机械或电子装置，它决定了感光元件（如胶片或数码传感器）暴露在光线下的时间长短。快门时间的长短直接影响拍摄到的照片明暗程度和动态效果。</p>
+<h3 id="1-3-1-快门的定义"><a href="#1-3-1-快门的定义" class="headerlink" title="1.3.1 快门的定义"></a>1.3.1 快门的定义</h3><ul>
+<li><strong>快门</strong>：快门是相机中控制感光元件（传感器）曝光时间的装置。它在按下快门按钮时打开，允许光线通过镜头到达感光元件，并在设定的时间后关闭，结束曝光。</li>
+<li><strong>快门速度（Shutter Speed）</strong>：快门速度是指快门打开的时间长短，通常以秒或分秒表示，如 1&#x2F;1000 秒、1&#x2F;60 秒、1 秒等。快门速度的设置决定了感光元件曝光的时间长短。</li>
+</ul>
+<h3 id="1-3-2-快门的作用"><a href="#1-3-2-快门的作用" class="headerlink" title="1.3.2 快门的作用"></a>1.3.2 快门的作用</h3><ol>
+<li><strong>控制曝光时间</strong>：<ul>
+<li><strong>快门速度越快</strong>（如 1&#x2F;1000 秒）：感光元件暴露在光线下的时间越短，捕捉的光线越少，图像越暗。这适用于光线充足的环境或需要冻结快速运动的场景。</li>
+<li><strong>快门速度越慢</strong>（如 1&#x2F;30 秒、1 秒）：感光元件暴露在光线下的时间越长，捕捉的光线越多，图像越亮。这适用于低光环境或需要捕捉运动轨迹的场景。</li>
+</ul>
+</li>
+<li><strong>影响动态效果</strong>：<ul>
+<li><strong>冻结运动</strong>：使用高快门速度可以冻结快速运动的物体，使其在照片中显得清晰。例如，拍摄高速运动的汽车、飞鸟或运动员时。</li>
+<li><strong>制造动感模糊</strong>：使用低快门速度可以在照片中制造出动感模糊效果，表现出运动的速度感。例如，拍摄流水、车流或光轨时。</li>
+</ul>
+</li>
+<li><strong>影响图像的清晰度</strong>：<ul>
+<li><strong>防止抖动模糊</strong>：使用高快门速度可以避免因相机抖动而造成的图像模糊。这对于手持拍摄或拍摄快速移动的物体尤为重要。</li>
+<li><strong>长曝光效果</strong>：使用低快门速度可以拍摄出平滑的水流、星轨或光绘效果，但需要使用三脚架稳定相机以防止相机抖动。</li>
+</ul>
+</li>
+</ol>
+<h1 id="2-测光"><a href="#2-测光" class="headerlink" title="2 测光"></a>2 测光</h1><h2 id="2-1-测光原理"><a href="#2-1-测光原理" class="headerlink" title="2.1 测光原理"></a>2.1 测光原理</h2><p>数码相机的测光系统一般是测定被摄对象反射回来的光亮度，也称之为反射式测光。 测光后通过计算确定合适的光圈快门值。我们可以把测光系统比做相机的眼睛，先用“眼睛观察该环境有多亮，然后决定曝光”</p>
+<p>反射率确实由物体的材质决定，物体表面的光反射特性影响其反射率。一般镜面物体反射率接近100%，白卡纸的反射率在90%左右，煤碳的反射率在4%左右。假设测光系统最后给出的只是一个环境亮度的值，这时候测一个暗环境的镜子和测一个亮环境的煤炭给出来的值是一样的，这显然不合理，那要如何解决这个问题呢？</p>
+<p>相机假设所拍摄的画面有一个整体平均的反射率为18%（即中性灰）。研究表明，对于常见的被摄对象，综合的反射率大多在18%上下，于是，在校准相机的测光系统时就以反射率为18%的灰色为基准，这样在大多数情况下是合适的，但对于大面积的白色等反射率高于18%很多的情况，就会曝光不足，对于大面积的黑色等反射率低于18%很多的情况就会曝光过度，所以对于这些极端情况，相机的测光系统是有偏差的，需要进行补偿。<br><img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/light-stops.jpg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload></p>
+<h2 id="2-2-曝光补偿"><a href="#2-2-曝光补偿" class="headerlink" title="2.2 曝光补偿"></a>2.2 曝光补偿</h2><p>曝光补偿用于改变照相机建议的曝光值，从而使照片更亮或更暗。可以理解为改变那饿推荐值。</p>
+<p>当我们对白色物体测光时，遵循18%中性灰，相机画面会偏暗，需要增加曝光补偿（增加曝光量）<br><img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/%E6%9B%9D%E5%85%89%E8%A1%A5%E5%81%BF1.jpeg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload><br>当我们对深色物体测光时，遵循18%中性灰，相机画面会偏亮，需要减少曝光补偿（减少曝光量）<br><img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/%E6%9B%9D%E5%85%89%E8%A1%A5%E5%81%BF2.jpeg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload></p>
+<h2 id="2-3-测光模式"><a href="#2-3-测光模式" class="headerlink" title="2.3 测光模式"></a>2.3 测光模式</h2><p>常见测光模式</p>
+<ul>
+<li><strong>Multi&#x2F;Matrix metering</strong><br>这种计量模式通过将框架划分为不同的区域来评估整个场景的光线。<img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Matrix-Metering-mode-area.jpg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload></li>
+<li><strong>Center-weighted metering</strong><br>相机使用框架的中心来计算场景的光线。<img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Center-Metering-mode-area.jpg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload></li>
+<li><strong>Spot metering</strong><br>这是最具体的测量模式，相机使用单个焦点来读取光线。<img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/Spot-metering-mode-area.jpg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload></li>
+</ul>
+<h2 id="2-4-曝光模式"><a href="#2-4-曝光模式" class="headerlink" title="2.4 曝光模式"></a>2.4 曝光模式</h2><ol>
+<li>P档（Program）<br>无法手动控制光圈和快门速度</li>
+<li>A档（Aperture）<br>手动设置光圈，相机自动计算快门。主要用来控制景深</li>
+<li>S档（Shutter）<br>手动设置快门，相机自动计算光圈。根据拍摄物体的运动速度以及想要获得的不同效果来选择</li>
+<li>M档（Manual）<br>光圈快门均为手动设置</li>
+</ol>
+<h1 id="3-其他"><a href="#3-其他" class="headerlink" title="3 其他"></a>3 其他</h1><h2 id="3-1-直方图"><a href="#3-1-直方图" class="headerlink" title="3.1 直方图"></a>3.1 直方图</h2><p><img src="https://img.wudh.top/brain/photography/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80-%E6%9B%9D%E5%85%89/%E7%9B%B4%E6%96%B9%E5%9B%BE.jpeg" srcset="https://img.wudh.top/blog/site/1/loading.gif" lazyload></p>
+<h2 id="3-2-包围曝光"><a href="#3-2-包围曝光" class="headerlink" title="3.2 包围曝光"></a>3.2 包围曝光</h2><p>主要用于确保在复杂光线条件下获得正确的曝光。具体做法是：相机在一次拍摄过程中，自动拍摄同一场景的多张照片，每张照片的曝光设置略有不同。这样，摄影师可以在后期选择最佳曝光的照片，或合成不同曝光的照片来获得更丰富的细节。</p>
+<h1 id="4-参考"><a href="#4-参考" class="headerlink" title="4 参考"></a>4 参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24048647">等效光圈，是耶？非耶？</a></li>
+<li><a target="_blank" rel="noopener" href="https://core.ac.uk/download/pdf/77032339.pdf">Determining the Photographic Guide Number of an LED</a></li>
+<li><a target="_blank" rel="noopener" href="https://photographylife.com/what-is-iso-in-photography">ISO</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Shutter_(photography)">Shutter (photography)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.163.com/dy/article/DUJHSN5405363NLC.html">拍摄测光，摄影师常说的18%反光率中性灰是什么</a></li>
+<li><a target="_blank" rel="noopener" href="https://capturetheatlas.com/metering-modes/">CAMERA METERING MODES EXPLAINED – HOW TO USE METERING MODES</a></li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%91%84%E5%BD%B1/" class="category-chain-item">摄影</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%91%84%E5%BD%B1/%E5%9F%BA%E7%A1%80/" class="category-chain-item">基础</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%91%84%E5%BD%B1/" class="print-no-link">#摄影</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>曝光</div>
+      <div>https://blog.wudh.top/2024/10/26/曝光/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Easton</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年10月26日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/09/01/%E7%9B%B8%E6%9C%BA%E6%88%90%E5%83%8F%E5%8E%9F%E7%90%86/" title="相机成像原理">
+                        <span class="hidden-mobile">相机成像原理</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://github.com/EastonVoyager" target="_blank" rel="nofollow noopener"><span>Easton</span></a> <i class="iconfont icon-love"></i> <a href="https://wudh.top" target="_blank" rel="nofollow noopener"><span>Life</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
